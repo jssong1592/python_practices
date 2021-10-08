@@ -22,7 +22,7 @@ def bfs(v,graph,color):
             continue
         dq = deque()
         color[i] = 1
-        dq.append((1,color[1]))
+        dq.append((i,color[i]))
         while dq:
             node, c = dq.popleft()
             for dest in graph[node]:
