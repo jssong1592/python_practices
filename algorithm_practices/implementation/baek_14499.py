@@ -68,7 +68,7 @@ for cmd in cmd_lst:
         print(dice_num[7-position[0]])
 
         if graph[x][y] == '0':
-            graph[x][y] = position[0]
+            graph[x][y] = dice_num[position[0]]
         else:
             dice_num[position[0]] = graph[x][y]
             graph[x][y] = '0'
